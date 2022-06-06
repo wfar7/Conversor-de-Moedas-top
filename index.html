@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+      Descubra os valores de REAIS em Dolar Americano U$ ou EURO €
+    </p>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+      class="page-logo" alt=""><br><br>
+
+    <label for="moeda">ISIRA O VALOR EM</label><br>
+    <select name="select1" class="select" id="id1">
+      <option>REAL</option>
+      <option>DOLAR</option>
+      <option>EURO</option>
+      <option>BITCOIN</option>
+    </select>
+    <input type="number" id="valor" size="2" placeholder="R$:10.000,00" /><br>
+
+    <label> DESEJA CONVERTER EM </label>
+    <select name="select" class="select" id="id">
+      <option>REAL</option>
+      <option>DOLAR</option>
+      <option>EURO</option>
+      <option>BITCOIN</option>
+    </select>
+    <button type="submit" onclick="converter()">Converter</button>
+    <h2 id="valorConvertido"></h2>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
+</body>
+<script src="srcript.js"></script>
+
+</html>
